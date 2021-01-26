@@ -1,0 +1,32 @@
+@mixin clearFix {
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin responScreen($screen){
+    
+    @if ($screen == "sm-phone") {
+        @media (max-width: 450px) {
+            @content;
+        }
+    }
+    @if ($screen == "bg-phone") {
+        @media (max-width: 600px) {
+            @content;
+        }
+    }
+    @if ($screen == "tap-port") {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+    @if ($screen == "tap-land") {
+        @media (max-width: 1080px) {
+            @content;
+        }
+    }
+    
+}

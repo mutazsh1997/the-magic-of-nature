@@ -1,0 +1,21 @@
+@import "abstract/animation";
+@import "abstract/mixin";
+@import "abstract/variables";
+
+@import "base/base";
+
+@import "components/button";
+@import "components/navigation";
+
+@import "layout/coulmn";
+@import "layout/footer";
+@import "layout/header"; 
+
+@import "sections/adventure"; 
+@import "sections/card"; 
+@import "sections/featrue";                          
+@import "sections/form";             
+@import "sections/naturePhoto"; 
+@import "sections/testimoial";  
+   
+@import "typogrophy/typogrophy";             

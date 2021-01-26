@@ -1,0 +1,56 @@
+.feature {
+
+    padding: 8rem 0 10rem;
+    background: #f9fff9;      
+    
+    @include responScreen(bg-phone) {
+        padding: 4rem 0 5rem;
+    }
+
+    &__display {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+          
+    &__item {   
+        font-size: 2rem;
+        border-bottom: 4px solid transparent;
+        border-radius: 1rem;
+        padding: 4rem;    
+        box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: .5);  
+        background: linear-gradient(-90deg ,#12af2c, #11b34f); 
+        transition: transform .5s ease-out, border .5s;
+        color: rgb(255, 255, 255);   
+  
+        @include clearFix;        
+    
+     
+        & i {        
+            font-size: 1em; 
+            float: right;
+            margin-top: 10px;
+            color: currentColor;
+        }         
+
+        & h4 {
+            font-size: 1.2em; 
+            margin: 1rem 0;
+            float: left;
+            color: currentColor;
+            text-transform: capitalize;
+            }
+
+        & p {
+            font-size: .8em;
+            text-align: left; 
+            width: 100%;
+            float: left; 
+            color: currentColor;
+        }
+
+        &:hover {
+            transform: translateY(-1rem);
+            border-bottom: 5px solid #2ba722;
+        } 
+    } 
+}   

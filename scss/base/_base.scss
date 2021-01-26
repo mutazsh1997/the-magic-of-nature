@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+  
+html {
+    font-size: 62.5%; // 10px  / 16px = 0.62.5%;
+}
+
+body { 
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box; 
+    overflow-x: hidden;
+}
+
+.contaniner { 
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.hidden-phone {
+
+    @include responScreen(tap-port) {
+        display: none;
+    }
+}
+ 
+
+/* width */         
+::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #040c2e; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff;   
+  } 
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(192, 245, 181);  
+  } 
+
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:active {
+    background: rgb(152, 250, 132);  
+  }  
+

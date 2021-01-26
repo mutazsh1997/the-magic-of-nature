@@ -1,0 +1,49 @@
+.header {
+
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(9, 116, 54, 0.7), rgba(0, 0, 0, 0.7)), url(../images/10.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; 
+ 
+    &__hero {
+        position: absolute;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        width: 80%;
+        
+        @include responScreen (tap-port) {
+            width: 100%;
+            margin: 0 2rem;
+        }
+ 
+        & h1 {
+            color: aliceblue; 
+            font-size: 6rem;
+            font-weight: 600;
+            letter-spacing: 1rem;  
+            width: 90%;
+          
+
+            @include responScreen (bg-phone) {
+                font-size: 3rem;
+            }
+        } 
+        & p {
+            color: #d7fae0;
+            font-size: 4rem; 
+            font-weight: 300;
+            line-height: 4rem;
+            letter-spacing: 1rem;
+            margin: 1rem 0;
+            width: 90%; 
+
+           
+            @include responScreen (bg-phone) {
+                font-size: 2rem
+            }
+        }
+    }
+}

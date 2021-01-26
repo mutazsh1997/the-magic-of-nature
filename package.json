@@ -1,0 +1,14 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "adevenced css curse",
+  "main": "index.js",
+  "scripts": {
+     "compile:sass" : "node-sass scss/mainstyle.scss css/style.css -w"
+  },
+  "author": "mu",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

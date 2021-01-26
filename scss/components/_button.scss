@@ -1,0 +1,47 @@
+.btn {
+
+    &:link, &:visited {
+        font-size: 3rem;
+        text-decoration: none;
+        color: antiquewhite;
+        background: linear-gradient( to right ,rgb(3, 163, 43), rgb(30, 163, 90),rgb(20, 189, 96) ,rgb(14, 211, 103));
+        background-size: 400%;
+        background-position: left;
+        padding: 1rem 4rem;
+        text-transform: capitalize;
+        display: inline-block;
+        margin-top: 2rem;
+        border-radius: 0 50px; 
+        transition-duration: .4s;
+        transition-property: transform, box-shadow;
+
+        &:hover {
+            animation: btn .9s alternate-reverse infinite; 
+            transform: scale(1.1) translateY(-10px);
+            box-shadow: 0 1.2rem 1rem rgba(0, 0, 0, 0.4); 
+        }
+
+        &:active {
+            transform: scale(1) translateY(0px);
+            box-shadow: none;
+        }
+    }  
+}
+
+.more__story {
+    &:link, &:visited {
+        display: inline-block;
+        font-size: 2.6rem;
+        border-bottom: 1px solid #3da82a;
+        text-decoration: none;
+        padding: 5px;
+        color: #3eb15b;
+        transition: all 0.5s;
+    }
+    
+    &:active, &:hover {
+        background: #3eb15b;
+        color: #fff;
+        border-radius: 1rem;                  
+    }        
+} 

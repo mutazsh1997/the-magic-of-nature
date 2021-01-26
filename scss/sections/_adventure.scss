@@ -1,0 +1,95 @@
+/*adventure popup section*/
+
+.adventure {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(68, 68, 68, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s;
+
+    &:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__display {
+        width: 70%;
+        height: 70vh;
+        padding: 3rem;
+        background: rgba(231, 231, 231, .8);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+        transition:  opacity .8s, transform .5s;
+    }              
+     
+    &:target &__display {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__title {
+       
+        & p {
+            color: #ffff;
+            width: 80%;
+            margin: 0 auto;
+            column-count: 2;
+            column-gap: 2rem;
+            text-align: left;
+        }
+    }
+
+    &__buttons {
+
+        display: flex;
+        justify-content: space-between;
+
+        & a:nth-child(1) {
+
+           font-size: 4rem; 
+           margin: 0 4rem;
+           padding: 1rem 2rem;
+           background: linear-gradient( to left,  $green-1 , $green-2); 
+           text-decoration: none;
+           border-radius: 10rem;
+           color: $white; 
+           text-transform: capitalize;
+           background-position: right;  
+           background-size: 500%;
+           transition: all .5s;
+
+            
+           &:hover {
+            background-position: left;  
+             box-shadow: 0 0 1rem rgba(#000, .7);
+           }
+
+        }
+        & a:nth-child(2) {
+
+            align-self: center;
+ 
+            & i {
+            float: right; 
+            font-size: 3rem;   
+            color: $green-1;  
+            cursor: pointer;
+            align-self: center;
+            margin: 0 4rem; 
+            transition: all .5s;
+
+            &:hover {
+                color: transparent;  
+                text-shadow: 0 1px 0 rgba(rgb(243, 64, 64), 1);
+            }
+        }
+        } 
+    }
+}
